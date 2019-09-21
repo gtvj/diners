@@ -1,8 +1,9 @@
 const restaurants = require('./restaurants');
 const people = require('./people');
 const get_person = require('./get_person');
-const get_foods_diners_wont_eat = require('./get_foods_diners_wont_eat');
+const get_foods_diners_wont_eat = require('./get_foods_diner_wont_eat');
 const match_food_requirements = require('./match_food_requirements');
+const get_intersection = require('./get_intersection');
 const print_response = require('./print_response');
 
 const answers = [];
@@ -29,10 +30,14 @@ process.on('exit', () => {
         .map(i => get_person(i, people))
         .filter(i => !!i);
 
-    const bad_foods = get_foods_diners_wont_eat(diners);
-    const good_restaurants = match_food_requirements(bad_foods, restaurants);
+    const places_to_go = diners.map(i => {
+        const bad_foods = get_foods_diners_wont_eat(i);
+        return match_food_requirements(bad_foods, restaurants);
+    });
+    
+    console.log(get_intersection(places_to_go));
+    
 
-    print_response(answers, diners, bad_foods, good_restaurants);
 });
 
 ask();

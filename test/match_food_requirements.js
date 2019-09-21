@@ -6,7 +6,7 @@ describe('get_restaurants_that_meet_food_needs', function () {
     describe('match_food_requirements()', function () {
         it('should return an object the correct restaurants', function () {
 
-            let foods_diners_wont_eat = ["Mexican", "Chinese"];
+            let foods_diner_wont_eat = ["Mexican", "Chinese"];
 
             let restaurant_results = [
                 {
@@ -47,7 +47,7 @@ describe('get_restaurants_that_meet_food_needs', function () {
             ];
 
 
-            assert.deepEqual(match_food_requirements(foods_diners_wont_eat, restaurants), restaurant_results);
+            assert.deepEqual(match_food_requirements(foods_diner_wont_eat, restaurants), restaurant_results);
 
         });
     });

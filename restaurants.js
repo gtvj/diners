@@ -1,5 +1,10 @@
 module.exports = [
     {
+        "name": "Bland town",
+        "food": ["Gruel"],
+        "drinks": ["Water"]
+    },
+    {
         "name": "El Cantina",
         "food": ["Mexican"],
         "drinks": ["Soft drinks", "Tequila", "Beer"]
