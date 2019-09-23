@@ -1,5 +1,4 @@
 const get_diner_drinks = (diner) => {
-
     return diner.drinks;
 };
 

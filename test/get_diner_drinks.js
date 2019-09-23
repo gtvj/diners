@@ -1,6 +1,5 @@
 const assert = require('assert');
 const get_diner_drinks = require('../get_diner_drinks');
-const people = require('../people');
 
 describe('get_diner_drinks', function () {
 
