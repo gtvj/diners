@@ -33,6 +33,8 @@ process.on('exit', () => {
     const places_to_go = diners.map(i => {
         const bad_foods = get_foods_diners_wont_eat(i);
         return match_food_requirements(bad_foods, restaurants);
+
+
     });
     
     console.log(get_intersection(places_to_go));

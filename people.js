@@ -11,7 +11,7 @@ module.exports = [
     },
     {
         "name": "John Davis",
-        "wont_eat": ["Fish"],
+        "wont_eat": ["Fish", "Gruel"],
         "drinks": ["Cider", "Rum", "Soft drinks"]
     },
     {
