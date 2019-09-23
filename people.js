@@ -2,7 +2,7 @@ module.exports = [
     {
         "name": "Fussy Eater",
         "wont_eat": ["Mexican", "Chinese", "Eggs", "Meat", "Fish", "Pasta", "Dairy", "Japanese", "Bread", "Nuts", "Cheese", "Fruit", "Salad", "Deli", "Deserts"],
-        "drinks": ["Cider", "Rum", "Soft drinks"]
+        "drinks": ["Cider", "Rum", "Soft drinks", "Water"]
     },
     {
         "name": "Fussy Drinker",
@@ -11,8 +11,8 @@ module.exports = [
     },
     {
         "name": "John Davis",
-        "wont_eat": ["Fish", "Gruel"],
-        "drinks": ["Cider", "Rum", "Soft drinks"]
+        "wont_eat": ["Fish"],
+        "drinks": ["Cider", "Rum", "Soft drinks", "Water"]
     },
     {
         "name": "Gary Jones",
