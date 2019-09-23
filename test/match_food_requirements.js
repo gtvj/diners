@@ -10,6 +10,11 @@ describe('get_restaurants_that_meet_food_needs', function () {
 
             let restaurant_results = [
                 {
+                    "name": "Bland town",
+                    "food": ["Gruel"],
+                    "drinks": ["Water"]
+                },
+                {
                     "name": "Spice of life",
                     "food": ["Eggs", "Meat", "Fish", "Pasta", "Dairy"],
                     "drinks": ["Vokda", "Gin", "whisky", "Rum", "Cider", "Beer", "Soft drinks"]
